@@ -47,6 +47,11 @@ const GlobalStyle = createGlobalStyle`
     align-items: center;
     flex-wrap: wrap;
     position: relative; 
+    background-image: url('https://i.pinimg.com/originals/e6/d5/2c/e6d52cb7ea7b20b8b1ebe382fca47902.jpg'); 
+    background-color: #18171F;
+    background-blend-mode: multiply;
+    background-size: 400px;
+    min-height: 100vh;
     
     .titleApp {
       color: #f7df4b;
