@@ -63,6 +63,7 @@ const GlobalStyle = createGlobalStyle`
 
     @media(max-width: 600px) {
       padding: 10px 0;
+      background-image: url('');
     }
   }
 `;

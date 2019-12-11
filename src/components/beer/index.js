@@ -1,5 +1,5 @@
 import React from 'react';
-import { Eye } from 'styled-icons/remix-line/Eye';
+import { Link as LinkIcon } from 'styled-icons/icomoon/Link';
 import * as Ui from './styles';
 
 export default function Beer({ idBeer, tagline, name, image }) {
@@ -13,7 +13,7 @@ export default function Beer({ idBeer, tagline, name, image }) {
         <Ui.TagLine>{tagline}</Ui.TagLine>
       </div>
       <Ui.Button to={`/detail/${idBeer}`}>
-        <Eye color="#fff" size={20} />
+        <LinkIcon color="#fff" size={20} />
       </Ui.Button>
     </Ui.Container>
   );
