@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.main`
+  display: flex;
+  flex-direction: column;
   padding: 100px;
+  align-items: center;
+  flex-wrap: wrap;
 `;
 
 export const Title = styled.h1`
@@ -13,5 +17,7 @@ export const Title = styled.h1`
 `;
 
 export const listBeer = styled.section`
-  /* background-color: #fff; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 `;

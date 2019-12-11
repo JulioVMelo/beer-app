@@ -3,23 +3,31 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  flex-basis: 320px;
+
+  height: 340px;
+  width: 300px;
   background-color: #0b0a0c;
-  max-width: 200px;
-  height: 300px;
   border-radius: 4px;
-  padding: 10px;
+  padding: 10px 16px;
+  margin-bottom: 20px;
   position: relative;
 
   .text {
-    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
   }
 `;
 
 export const Name = styled.h2`
   color: #f7df4b;
-  font-size: 3rem;
+  font-size: 2.7rem;
+  text-overflow: ellipsis;
 `;
 
 export const TagLine = styled.h3`
@@ -42,10 +50,12 @@ export const Image = styled.div`
 export const Button = styled.button`
   position: absolute;
   right: -25px;
-  bottom: 60px;
+  bottom: 80px;
   width: 50px;
   height: 50px;
   border: none;
-  background-color: #f7df4b;
+  background-color: #62d462;
   border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
 `;

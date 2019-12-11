@@ -1,17 +1,20 @@
 import React from 'react';
+import { Eye } from 'styled-icons/remix-line/Eye';
 import * as Ui from './styles';
 
-export default function Beer() {
+export default function Beer({ tagline, name, image }) {
   return (
     <Ui.Container>
       <Ui.Image>
-        <img src="https://images.punkapi.com/v2/22.png" alt="Buzz" />
+        <img src={image} alt={name} />
       </Ui.Image>
       <div className="text">
-        <Ui.Name>Buzz</Ui.Name>
-        <Ui.TagLine>A Real Bitter Experience.</Ui.TagLine>
+        <Ui.Name>{name}</Ui.Name>
+        <Ui.TagLine>{tagline}</Ui.TagLine>
       </div>
-      <Ui.Button>ir</Ui.Button>
+      <Ui.Button>
+        <Eye color="#fff" size={20} />
+      </Ui.Button>
     </Ui.Container>
   );
 }
