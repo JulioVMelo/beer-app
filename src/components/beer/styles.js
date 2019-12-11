@@ -62,4 +62,9 @@ export const Button = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 360px) {
+    left: 10px;
+    top: 10px;
+  }
 `;

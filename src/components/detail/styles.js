@@ -9,6 +9,7 @@ export const Container = styled.section`
   background-color: #0b0a0b;
   border-radius: 6px;
   padding: 20px;
+  position: relative;
 
   @media (max-width: 1050px) {
     width: 90%;
@@ -70,6 +71,6 @@ export const Image = styled.div`
 
 export const Back = styled(Link)`
   position: absolute;
-  top: 10px;
+  top: -105px;
   left: 10px;
 `;
