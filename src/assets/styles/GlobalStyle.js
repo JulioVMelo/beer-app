@@ -61,7 +61,7 @@ const GlobalStyle = createGlobalStyle`
       margin-bottom: 70px;
     }
 
-    @media(max-width: 600px) {
+    @media(max-width: 1000px) {
       padding: 10px 0;
       background-image: url('');
     }
