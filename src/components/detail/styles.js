@@ -59,13 +59,12 @@ export const Slogan = styled.div`
 `;
 
 export const Image = styled.div`
-  max-height: 200px;
   width: 100%;
   flex-grow: 1;
   text-align: center;
 
   img {
-    max-height: 100%;
+    max-height: 193px;
   }
 `;
 
