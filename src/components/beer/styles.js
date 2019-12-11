@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   display: flex;
@@ -47,7 +48,7 @@ export const Image = styled.div`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled(Link)`
   position: absolute;
   right: -25px;
   bottom: 80px;
@@ -58,4 +59,7 @@ export const Button = styled.button`
   border-radius: 50%;
   outline: 0;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

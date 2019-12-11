@@ -1,14 +1,13 @@
 /* eslint-disable camelcase */
 import React, { useState, useEffect } from 'react';
 import * as Ui from './styles';
-import Beer from '../../components/beer';
+import Beer from '../beer';
 import api from '../../services/api';
 
-export default function Home() {
+export default function ListBeers() {
   const [listBeers, setListBeers] = useState([]);
 
   useEffect(() => {
-    console.log('teste');
     async function listOfBeers() {
       try {
         const response = await api.get('/beers');
@@ -22,13 +21,16 @@ export default function Home() {
   }, []);
 
   return (
-    <Ui.Container>
-      <Ui.Title>Beer app</Ui.Title>
-      <Ui.listBeer>
-        {listBeers.map(({ tagline, name, image_url }) => (
-          <Beer tagline={tagline} name={name} key={name} image={image_url} />
-        ))}
-      </Ui.listBeer>
-    </Ui.Container>
+    <Ui.listBeer>
+      {listBeers.map(({ tagline, name, image_url, id }) => (
+        <Beer
+          tagline={tagline}
+          name={name}
+          key={name}
+          image={image_url}
+          idBeer={id}
+        />
+      ))}
+    </Ui.listBeer>
   );
 }

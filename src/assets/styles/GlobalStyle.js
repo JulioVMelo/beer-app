@@ -39,6 +39,27 @@ const GlobalStyle = createGlobalStyle`
     background-color: #18171F;
     font-family: "Roboto", "Helvetica neue", "Lato", sans-serif;
   }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative; 
+    
+    .titleApp {
+      color: #f7df4b;
+      text-transform: uppercase;
+      font-size: 3.2rem;
+      text-align: center;
+      margin-bottom: 70px;
+    }
+
+    @media(max-width: 600px) {
+      padding: 10px 0;
+    }
+  }
 `;
 
 export default GlobalStyle;
